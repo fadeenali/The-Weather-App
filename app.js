@@ -82,7 +82,7 @@ crossBtn.addEventListener('click', () => {
     allData.classList.remove("weatherData")
 
     myText.classList.add("beforText")
-    myText.innerHTML = "Search the weather"
+    myText.innerHTML = "Weather-App"
 
 
 })
