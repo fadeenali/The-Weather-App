@@ -10,7 +10,7 @@ body {
     align-items: center;
     color: #FAEDC6;
     display: flex;
-    height: 90vh;
+    height: 100vh;
     font-family: 'Archivo Black', sans-serif;
     background-image: url(./ui-bg-ui.png);
     background-repeat: no-repeat;
@@ -85,35 +85,59 @@ textarea {
     font-weight: bolder;
 }
 
+.iconColor {
+    background-color: #fff;
+}
+
+.onlyWeatherData {
+    font-weight: bolder;
+    padding: 20px;
+    width: 15rem;
+    background-color: rgb(22, 22, 22);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin: 15px;
+    height: 8rem;
+}
+
 .weatherData {
     font-weight: bolder;
     padding: 20px;
     width: 15rem;
-    /* background-color: rgb(73, 228, 255); */
-    background-image: url(./card\ ui-img.gif);
-    background-position: center;
+    background-color: rgb(22, 22, 22);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     margin: 15px;
-    height: 20rem;
+    height: 18rem;
 }
 
-#temp {
+.alldata-hide {
+    display: none;
+}
+
+.temp1 {
     font-size: 30px;
 }
 
-.dropdown {
-    background-color: transparent;
-    color: tomato;
+#city {
+    font-weight: bolder;
 }
 
 #weath {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #location:hover {
     background-color: rgb(252, 252, 252);
     color: black;
+}
+
+.forErr {
+    color: #fff;
+}
+
+.hide911 {
+    display: none;
 }
 
 select {
@@ -130,9 +154,14 @@ select {
     /* color: rgb(245, 86, 65); */
 }
 
+.hide-select {
+    display: none;
+    /* visibility: hidden; */
+}
+
 @media (max-width: 600px) {
     .weatherData {
-        height: 20rem;
+        height: 18rem;
         width: 15rem;
     }
     .beforText {
@@ -145,7 +174,7 @@ select {
 
 @media (max-width: 300px) {
     .weatherData {
-        height: 20rem;
+        height: 18rem;
         width: 13rem;
     }
     .beforText {

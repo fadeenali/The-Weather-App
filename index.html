@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App</title>
+
+    <!-- css  -->
+
     <link rel="stylesheet" href="./app.css">
 
 
@@ -48,12 +51,25 @@
             </div> -->
             <div class="card-body">
 
-                <div class="search row mb-3">
+                <div class="search row mb-2">
 
                     <input id="input" class="input-search   col-lg-12 col-md-12  col-sm-12 rounded-pill  " type="text" placeholder="Search by city">
 
-                    <div class="row">
 
+                    <div id="hide" class=" hide911  dropdown row mt-2 mb-2">
+                        <select name="weather" id="select">
+    
+                            <option selected> select one</option>
+                            <option value="weatheronly"> weather</option>
+                            <option value="temp"> tempretur</option>
+                            <option value="humidity"> humidity</option>
+                            <option value="speed"> speed</option>
+                        </select>
+
+
+                    </div>
+
+                    <div class="row">
 
                         <div class="btn-group mt-2 col-lg-12 " role="group" aria-label="Basic example">
 
@@ -64,46 +80,46 @@
 
                     </div>
                 </div>
-                <button id="location" class=" btn btn-dark col-lg-12 col-md-12 col-sm-12  mb-2"><i class="fas fa-map-marker-alt location"></i> location weather</button>
-                <!-- <div class="dropdown">
-                    <select id="select" class="form-select-mds   mt-5  " aria-label="Default select example">
-                                    <option selected>select one</option>     
-                                    <option value="temp">Temperature</option>
-                                    <option value="2">Humidity</option>
-                                    <option value="3">Wind speed</option>
-                                  </select>
-
-                </div> -->
 
 
-                <div id="all-data" class="text-dark  ">
+                <button id="location" class=" btn btn-dark col-lg-12 col-md-12 col-sm-12 mb-2 "><i class="fas fa-map-marker-alt location"></i> location weather</button>
+
+
+
+
+
+
+
+
+                <div id="all-data" class="text-dark   mx-5  ">
                     <span id="myText" class="beforText "> Weather-App</span>
 
 
                     <div>
-                        <h3 id="city">
+                        <h3 id="city" class="text-light">
                             <!-- city  -->
+                            <div id="forErr"></div>
                         </h3>
-                        <p id="time">
+                        <p id="time" class="text-light">
                             <!-- time  -->
                         </p>
                     </div>
                     <div class="weather">
-                        <p id="weath">
+                        <p id="weath" class="text-light">
                             <!-- weather  -->
 
 
                         </p>
 
 
-                        <div id="temp">
+                        <div id="temp" class="temp1 text-light">
                             <!-- tempretur  -->
 
                         </div>
-                        <p id="humidity">
+                        <p id="humidity" class="text-light">
                             <!-- humidity  -->
                         </p>
-                        <p id="windSpeed" class="text-dark">
+                        <p id="windSpeed" class="text-light">
                             <!-- wind speed  -->
                         </p>
                     </div>
